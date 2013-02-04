@@ -1,7 +1,7 @@
 self.onmessage = function (event) {
     var data = event.data;
     var c_i = data.i;
-    var bailout = data.escape * data.escape;
+    var bailout = data.escape_radius * data.escape_radius;
     var max_iter = data.max_iter;
     var r_c, c_z, i_z, tag;
     data.color_tag = [];
@@ -25,5 +25,4 @@ self.onmessage = function (event) {
     }
     self.postMessage(data);
 }
-
 
