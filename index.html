@@ -15,6 +15,11 @@
       .invisible {
         display: none
       }
+      p, h3, h4, #coord {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
     </style>
     <script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -50,26 +55,26 @@
     <h4>Controls</h4>      
     <form id="coord" onsubmit="mandelbrot.form_submit(); return false;">
       <p>
-        Re(Image Center) = <input name="r_center" value="-0.5" style="width:150px;" autocomplete="off"/>,
-        Im(Image Center) = <input name="i_center" value="0" style="width:150px;" autocomplete="off"/>,
+        Re(Image Center) = <input name="r_center" value="-0.5" style="width:150px;" autocomplete="off"/>,&nbsp;&nbsp;
+        Im(Image Center) = <input name="i_center" value="0" style="width:150px;" autocomplete="off"/>,&nbsp;&nbsp;
         Zoom = <input name="zoom" value="1" style="width:150px;" autocomplete="off"/>
       </p>
       <p>
-        Image Width = <input name="image_w" style="width:150px;" autocomplete="off"></input>,
+        Image Width = <input name="image_w" style="width:150px;" autocomplete="off"></input>,&nbsp;&nbsp;
         Image Height = <input name="image_h" style="width:150px;" autocomplete="off"></input>
       </p>
       <p>ZoomFactor on click= <input name="zoom_factor" type="text" value="2" style="width:40px;" autocomplete="off"/></p>
       <p>
-        RedFrequency = <input name="red_freq" value="7" style="width:40px;" autocomplete="off"></input>,
-        GreenFrequency = <input name="green_freq" value="5" style="width:40px;" autocomplete="off"></input>,
+        RedFrequency = <input name="red_freq" value="7" style="width:40px;" autocomplete="off"></input>,&nbsp;&nbsp;
+        GreenFrequency = <input name="green_freq" value="5" style="width:40px;" autocomplete="off"></input>,&nbsp;&nbsp;
         BlueFrequency = <input name="blue_freq" value="11" style="width:40px;" autocomplete="off"></input>
       </p>
       <p>
-        MaxIterations = <input name="max_iter" value="1024" style="width:50px;" autocomplete="off"></input>,
+        MaxIterations = <input name="max_iter" value="1024" style="width:50px;" autocomplete="off"></input>,&nbsp;&nbsp;
         EscapeRadius = <input name="escape_radius" value="2" style="width:50px;" autocomplete="off"></input>
       </p>
       <p>
-        Number of Workers = <input name="nb_workers" type="number" value="20" min="2" max="50" step="1" style="width:40px;"></input>,
+        Number of Workers = <input name="nb_workers" type="number" value="20" min="2" max="50" step="1" style="width:40px;"></input>
       </p>
       <input type="submit"/>
     </form>
